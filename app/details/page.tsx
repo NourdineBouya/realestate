@@ -5,13 +5,13 @@ import { Calendar } from "@/components/ui/calendar"
 import { Heart, Share2, Wifi, BedDouble, Snowflake, MapPin } from "lucide-react"
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import { useSearchParams } from 'next/navigation'
+ 
 
 const DetailPage = () => {
   const [date, setDate] = useState<Date | undefined>(new Date())
   const [mounted, setMounted] = useState(false)
   
-  const searchParams = useSearchParams()
+  
   
   useEffect(() => {
     // Ensure useRouter is only called on the client side
