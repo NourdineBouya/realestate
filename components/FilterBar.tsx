@@ -22,7 +22,7 @@ const filters = [
   { label: 'Top Rated', icon: Star },
 ]
 
-const FilterBar = ({ activeFilter, onFilterChange }) => {
+const FilterBar = ({ activeFilter, onFilterChange } : any) => {
   return (
     <ScrollArea className="w-full whitespace-nowrap mb-4">
       <div className="flex space-x-6 px-4 py-2">
