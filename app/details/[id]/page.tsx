@@ -3,9 +3,12 @@
 import { Calendar } from "@/components/ui/calendar"
 import { Heart, Share2, Wifi, BedDouble, Snowflake, MapPin } from "lucide-react"
 import Image from "next/image"
-import { useState, useEffect } from "react"
+import { useState, useEffect, use } from "react"
 
-const DetailPage = ({ params }: { params: { id: number } }) => {
+
+
+const DetailPage = ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = use(params)
   const [date, setDate] = useState<Date | undefined>(new Date())
   const [mounted, setMounted] = useState(false)
 

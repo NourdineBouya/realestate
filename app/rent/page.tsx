@@ -6,6 +6,7 @@ import PropertyCard from '@/components/PropertyCard'
 import Link from 'next/link'
 
 // Dummy Data
+
 const dummyData = [
   {
     id: 1,
